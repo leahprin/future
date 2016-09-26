@@ -22,12 +22,12 @@
     {{ Html.csrfMetaTags | raw }}
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
+
     {% if networkData.favMedia | length > 0 %}
         <link rel="shortcut icon" href="{{_Media.getMediaUrl(networkData.favMedia, 80, 80)}}" type="image/x-icon" />
         <link rel="icon" href="{{_Media.getMediaUrl(networkData.favMedia, 80, 80)}}" sizes="any" type="image/svg+xml" />
     {% endif %}
-    
+
     {% set primaryFont = networkData['styling']['fonts']['primaryFont'] %}
     {% set secFont = networkData['styling']['fonts']['secondaryFont'] %}
 
@@ -36,15 +36,15 @@
     {% endif %}
     {% if secFont != "" %}
         <link href='https://fonts.googleapis.com/css?family={{secFont}}:{{networkData['styling']['fonts']['secondaryFontVariants']}}' rel='stylesheet' type='text/css'>
-    {% endif %}    
+    {% endif %}
 
   <!--[if lte IE 8]><script type="text/javascript" src="{{networkData.templatePath}}/ie.js"></script><![endif]-->
 
-    <link rel="stylesheet" href="{{networkData.templatePath}}/index.css" type="text/css" media="all">
+    <link rel="stylesheet" href="{{networkData.templatePath}}/index.min.css" type="text/css" media="all">
     <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/js/plugins/jquery.fancybox/source/jquery.fancybox.css" />
     <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/js/plugins/jquery.noty-2.3.8/demo/animate.css" />
-        
-  
+
+
     {% set blogSettings = _Blog.getBlogSettings() %}
     {% if blogSettings.GoogleAnalyticsID != "" %}
         <!-- Google Analytics -->
@@ -61,7 +61,7 @@
     {% endif %}
 
     {% set blogList = _Blog.getBlogList() %}
-   
+
     {% if blogList | length > 0 %}
     <style>
         {% for blog in blogList %}
@@ -95,12 +95,12 @@
 
 <body class="body">
     {{ this.beginBody() }}
-    
+
     <!-- Google Tag Manager -->
     {% if networkData.thirdPartyIntegrations['googleTagManager'] | length > 0 %}
         {{networkData.thirdPartyIntegrations['googleTagManager']['code'] | raw}}
     {% endif %}
-        
+
 {{ this.render('partials/_header.twig', {network: networkData, blogData: blogData}) | raw }}
 
 {{ content | raw}}
@@ -139,4 +139,3 @@
 </body>
 {{ this.endPage() }}
 </html>
-
