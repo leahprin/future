@@ -100,11 +100,11 @@
             <div class="card__category">{{social.source | capitalize}} | viewType: [{{viewType}}] | position: [{{position}}] cardClass: [{{cardClass}}]</div>
             <p class="card__text" id="updateSocial{{article.socialId}}" data-update="0">{{ social.content | raw }}<!--<span class="card__tag">#tempor</span> --></p>
             <div class="card__caption">
-                {% if social.user['media']['path'] is not empty %}
+                {# {% if social.user['media']['path'] is not empty %}
                     <div class="card__avatar" style="background-image:url('{{social.user['media']['path']}}');"></div>
-                {% endif %}
+                {% endif %} #}
                 <div class="card__author">{{ (social.source == _Article.socialArticleSourceTwitter()) ? '@' : ''}}{{ social.user['name'] | lower }}</div>
-                <div class="card__date">{{ social.publishDate }}</div>
+                {# <div class="card__date">{{ social.publishDate }}</div> #}
             </div>
         </div>
 				{% if social.hasMedia == 'TRUE' and viewType == 'small'%}
