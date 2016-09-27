@@ -1,0 +1,11 @@
+<div class="my_card">
+  <div class="content">
+    <div class="category">Category</div>
+    <div class="text">
+			{# <h2>Headline text</h2> #}
+			<p>{{ social.content | raw | truncate(100, true) }}<p>
+		</div>
+		<div class="media">Image/Video here if available</div>
+    <div class="source">@{{social.source}}</div>
+  </div>
+</div>
