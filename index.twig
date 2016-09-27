@@ -5,9 +5,11 @@
 {% set articlesArr = _Blog.getBlogFeed({'limit': limit, 'offset': 0}) %}
 {% set articles = articlesArr.articles %}
 <div class="page_section">
-    {% if articles[0] %}
-        {{this.render('partials/_single-article.twig', {article: articles[0], 'position': 1, cardClass: 'card__banner full-screen', viewType: 'banner'}) | raw}}
-    {% endif %}
+		<div class="container">
+	    {% if articles[0] %}
+	        {{this.render('partials/_single-article.twig', {article: articles[0], 'position': 1, cardClass: 'card__banner full-screen', viewType: 'banner'}) | raw}}
+	    {% endif %}
+		</div>
 
     <div class="container">
         {% if articles|length > 0 %}
@@ -26,7 +28,7 @@
             </div>
         </div>
         {% endif %}
-        
+
         {% if articles[4] is defined %}
         <div class="row">
             <div class="col-two-thirds">
@@ -41,7 +43,7 @@
             </div>
         </div>
         {% endif %}
-        
+
         {% if articles[6] is defined %}
         <div class="row">
             <div class="col-two-thirds">
@@ -56,7 +58,7 @@
             </div>
         </div>
         {% endif %}
-        
+
         {% if articles[8] is defined %}
         <div class="row">
             <div class="col-two-thirds">
@@ -71,10 +73,10 @@
             </div>
         </div>
         {% endif %}
-        
+
         {% if articles[10] is defined %}
         <div class="row">
-            <div class="col-full"> 
+            <div class="col-full">
                 {% if articles[10] is defined %}
                     {{this.render('partials/_single-article.twig', {article: articles[10], 'position': 11, cardClass: 'card__banner', viewType: 'banner'}) | raw}}
                 {% endif %}
@@ -99,12 +101,12 @@
             {% endfor %}
         </div>
         {% endif %}
-        
+
         <div class="row ajaxArticles" data-existing-nonpinned-count="{{articlesArr.existingNonPinnedCount}}"></div>
         <div class=" text-center has-margin-bottom-40">
             {% if articles|length >= limit %}
             <a href="javascript:void(0)" class="button loadMoreArticles"><i class="fa fa-arrow-down" aria-hidden="true"></i> Load More</a>
             {% endif %}
-        </div>         
+        </div>
     </div>
 </div>
