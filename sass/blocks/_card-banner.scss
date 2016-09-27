@@ -19,7 +19,7 @@
             position:relative;
             vertical-align:middle;
             z-index:100;
-            @include padding(0 10% 40px);
+            //@include padding(0 10% 40px);
         }
         &__category{
             &:after {
