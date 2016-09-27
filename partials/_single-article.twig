@@ -98,7 +98,7 @@
 				{% endif %}
         <div class="card__content">
             <div class="card__category">{{social.source | capitalize}} | viewType: [{{viewType}}] | position: [{{position}}] cardClass: [{{cardClass}}]</div>
-            <p class="card__text" id="updateSocial{{article.socialId}}" data-update="0">{{ social.content | raw }}<!--<span class="card__tag">#tempor</span> --></p>
+            <p class="card__text" id="updateSocial{{article.socialId}}" data-update="0">{{ social.content | raw | truncate(100, true) }}<!--<span class="card__tag">#tempor</span> --></p>
             <div class="card__caption">
                 {# {% if social.user['media']['path'] is not empty %}
                     <div class="card__avatar" style="background-image:url('{{social.user['media']['path']}}');"></div>
