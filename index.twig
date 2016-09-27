@@ -19,7 +19,7 @@
                 {% endif %}
             </div>
             <div class="col-third-short">
-                {% for i in 2..3 %}
+                {% for i in 2..4 %}
                     {% if articles[i] %}
                         {{this.render('partials/_single-article.twig', {article: articles[i], 'position': (i+1), viewType: 'small'}) | raw}}
                     {% endif %}
