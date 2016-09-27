@@ -29,6 +29,7 @@
     {% set blogClass = article.blog['title']|replace({' ': ''}) %}
     <a itemscope itemtype="http://schema.org/NewsArticle"  itemprop="url" href="{{article.url}}" class="card swap card--category {{blogClass | lower}} {{cardClass}} {{cardImageClass}} {{ (article.isPromoted) ? 'ad_icon' : '' }}" data-id="{{article.articleId}}" data-position="{{position}}"
        data-social="0" data-article-image="{{articleImg}}" data-article-text="{{Helper.htmlToText(article.title, 100) | raw}}">
+			 {% if position == '1' %}<div class="container">{% endif %}{# contain the hero content to the grid #}
         <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="https://google.com/article"/>
         <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
             <meta itemprop="url" content="{{articleImg}}"/>
@@ -85,6 +86,7 @@
                 </button>
             </div>
         {% endif %}
+				{% if position == '1' %}</div>{% endif %}{# contain the hero content to the grid #}
     </a>
 {% else %}
     {% set social = article.social %}
