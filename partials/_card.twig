@@ -1,5 +1,5 @@
 {% set social = article.social %}
-<div class="my_card">
+<div class="card">
   <div class="content">
     <div class="category">{{social.source}}</div>
     <div class="text">
@@ -8,5 +8,6 @@
 		</div>
 		<div class="media">Image/Video here if available</div>
     <div class="source">{{ (social.source == _Article.socialArticleSourceTwitter()) ? '@' : ''}}{{ social.user['name'] | lower }}</div>
+		<div class="edit_controls_if_available"></div>
   </div>
 </div>

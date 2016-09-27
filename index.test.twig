@@ -1,0 +1,22 @@
+{{ set(this, 'title', _Blog.getBlogTitle()) }}
+
+{{this.registerJs("HomeController.listing();")}}
+{% set limit = 40 %}
+{% set articlesArr = _Blog.getBlogFeed({'limit': limit, 'offset': 0}) %}
+{% set articles = articlesArr.articles %}
+<div class="page_section">
+
+	    {% if articles[0] %}
+	        {{this.render('partials/_single-article.twig', {article: articles[0], 'position': 1, cardClass: 'card__banner full-screen', viewType: 'banner'}) | raw}}
+	    {% endif %}
+
+    <div class="container">
+			{% if articles|length > 0 %}
+				{% for i in 2..20 %}
+				    {% if articles[i] %}
+				        {{this.render('partials/_card.twig', {article: articles[i], 'position': (i+1)}) | raw}}
+				    {% endif %}
+				{% endfor %}
+			{% endif %}
+    </div>
+</div>
