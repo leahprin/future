@@ -81,37 +81,37 @@
             }
         }
     }
-    
-    
+
+
     .card {
-        
+
         &.card--light {
             .card__image {
                 width:100%;
             }
         }
-        
+
         .card__icon-social {
             top:5px;
         }
-        
-        &.card--technology {
-            .card__tag, .card__read-time {
-                display:none;
-            }
-        }
-        
-        &.card--category, &.card__instagram, &.card__youtube, &.card__vimeo {
-            .card__text, .card__tag {
-                display:none;
-            }
-        }
 
-        &.card_social {
-            .card__heading, .card__tag, .card__icon-social {
-                display:none;
-            }
-        }
+        // &.card--technology {
+        //     .card__tag, .card__read-time {
+        //         display:none;
+        //     }
+        // }
+        //
+        // &.card--category, &.card__instagram, &.card__youtube, &.card__vimeo {
+        //     .card__text, .card__tag {
+        //         display:none;
+        //     }
+        // }
+				//
+        // &.card_social {
+        //     .card__heading, .card__tag, .card__icon-social {
+        //         display:none;
+        //     }
+        // }
 
         &.card__youtube, &.card__vimeo {
             .card__heading {
@@ -128,36 +128,36 @@
                 display:block;
             }
         }
-        
-        
+
+
         &.withImage__content {
-            
+
             .card__content {
                 height:214px;
                 overflow:hidden;
-                
+
                 .content-section {
                     height:174px;
                     position:relative;
-                    
+
                     .card__text {
                         height:50px;
                         overflow:hidden;
                     }
-            
+
                     .card__caption {
                         width:100%;
                         bottom:0px!important;
                         margin-bottom:0px;
                         position:absolute;
-                        
+
                         .card__read-time {
                             display:none;
                         }
                     }
                 }
             }
-            
+
             &.card--technology {
                 .card__content {
 
@@ -176,21 +176,21 @@
                 }
             }
         }
-        
-        
+
+
         &.without__image {
             .card__image {
                 display:none;
             }
-            
+
             .card__content {
                 height:394px;
                 overflow:hidden;
-                
+
                 .content-section {
                     height:354px;
                     position:relative;
-            
+
                     .card__caption {
                         width:100%;
                         bottom:0px!important;
@@ -199,13 +199,13 @@
                     }
                 }
             }
-            
+
             .content-section {
                 .card__heading, .card__text, .card__date, .card__read-time {
                     color:$dark-color;
                     text-shadow:none;
                 }
-                
+
                 .card__text {
                     height:50px;
                     overflow:hidden;
@@ -241,5 +241,5 @@
             }
         }
     }
-    
+
 }

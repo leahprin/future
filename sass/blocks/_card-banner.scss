@@ -9,12 +9,6 @@
     padding:0px;
     width:100%;
 
-		&:before {
-			content: ' ';
-	    display: inline-block;
-	    vertical-align: middle;
-	    height: 100%;
-		}
     @media #{$media-phone}, #{$media-iPhoneMedium} {
         height:auto;
     }
@@ -26,14 +20,10 @@
             vertical-align:middle;
             z-index:100;
 						max-width: 700px;
-						display: inline-block;
-				    vertical-align: middle;
+
         }
         &__category{
 					padding: 0;
-            // &:after {
-            //     margin:5px auto 30px auto;
-            // }
         }
         &__icon {
             &-social {
