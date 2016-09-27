@@ -12,9 +12,9 @@
 
     <div class="container">
 			{% if articles|length > 0 %}
-				{% for i in 2..4 %}
+				{% for i in 2..20 %}
 				    {% if articles[i] %}
-				        {{this.render('partials/_card.twig', {article: articles[i], 'position': (i+1), viewType: 'small'}) | raw}}
+				        {{this.render('partials/_card.twig', {article: articles[i], 'position': (i+1)}) | raw}}
 				    {% endif %}
 				{% endfor %}
 			{% endif %}
