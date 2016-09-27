@@ -1,6 +1,6 @@
 .card {
     border-top-style:solid;
-    border-top-width:6px;
+    border-top-width:4px;
     background-color:$light-color;
     display:table;
     width:100%;
@@ -141,7 +141,7 @@
         position:relative;
         height:40px;
         width:40px;
-        
+
 		&-follow {
             background-image:url('images/icons/follow.svg');
             background-position:50%;
@@ -154,7 +154,7 @@
             top:-6px;
             width:18px;
        }
-		
+
 		&-unfollow {
             background-image:url('images/icons/unfollow.svg');
             background-position:50%;
