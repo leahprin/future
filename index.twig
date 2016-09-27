@@ -5,11 +5,10 @@
 {% set articlesArr = _Blog.getBlogFeed({'limit': limit, 'offset': 0}) %}
 {% set articles = articlesArr.articles %}
 <div class="page_section">
-		<div class="container">
+
 	    {% if articles[0] %}
 	        {{this.render('partials/_single-article.twig', {article: articles[0], 'position': 1, cardClass: 'card__banner full-screen', viewType: 'banner'}) | raw}}
 	    {% endif %}
-		</div>
 
     <div class="container">
         {% if articles|length > 0 %}
