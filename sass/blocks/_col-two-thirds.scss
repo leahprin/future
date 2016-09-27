@@ -1,6 +1,6 @@
 .col-two-thirds {
     .card {
-        height:400px;
+        height: 470px;
 
         @include phone {
             height:auto;
@@ -20,11 +20,11 @@
             }
         }
     }
-    
-    
+
+
     .card {
         .content-section {
-            
+
         }
 
         &.card--category, &.card__instagram, &.card__youtube, &.card__vimeo {
@@ -54,19 +54,19 @@
                 display:block;
             }
         }
-        
-        
+
+
         &.withImage_content {
             .card__image {
                 width:50%;
             }
         }
-        
+
         &.without__image {
             .card__image {
                 display:none;
             }
-            
+
             .content-section {
                 .card__heading, .card__text, .card__date, .card__read-time {
                     color:$dark-color;
@@ -121,7 +121,7 @@
             .card__read-time::before {
                 color:$dark-color!important;
             }
-            
+
             .card__icon-social {
                 background-image:url("images/icons/share.svg");
             }
