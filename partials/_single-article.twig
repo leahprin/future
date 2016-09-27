@@ -90,7 +90,7 @@
     {% set social = article.social %}
     {% set hasMediaClass = (social.hasMedia == 'TRUE') ? 'withImage__content' : 'without__image' %}
     <a href="{{ social.url }}" target="_blank" class="card swap card__{{social.source}} card_social  {{hasMediaClass}} {{cardClass}} caption_bottom" data-id="{{article.socialId}}" data-position="{{position}}" data-social="1" data-article-image="{{social.media['path']}}" data-article-text="{{Helper.htmlToText(social.content, -1) | raw | escape('html')}}">
-				{% if articles[0] %}<div class="container">{% endif %}
+				{% if cardClass == "full-screen" %}<div class="container">{% endif %}
         <div class="card__content">
             <div class="card__category">{{social.source | capitalize}}</div>
             <p class="card__text" id="updateSocial{{article.socialId}}" data-update="0">{{ social.content | raw }}<!--<span class="card__tag">#tempor</span> --></p>
@@ -125,6 +125,6 @@
                 </button>
             </div>
         {% endif %}
-				{% if articles[0] %}</div>{% endif %}
+				{% if cardClass == "full-screen" %}</div>{% endif %}
     </a>
 {% endif %}
