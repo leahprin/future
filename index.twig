@@ -6,6 +6,7 @@
 {% set articles = articlesArr.articles %}
 <div class="page_section">
 
+			{% set homepageHero = "" %}
 	    {% if articles[0] %}
 					{% set homepageHero = 'bar' %}
 	        {{this.render('partials/_single-article.twig', {article: articles[0], 'position': 1, cardClass: 'card__banner full-screen', viewType: 'banner'}) | raw}}
