@@ -26,5 +26,8 @@
     "gulp-util": "^2.2.14",
     "map-stream": "^0.1.0",
     "tiny-lr": "0.0.5"
+  },
+  "devDependencies": {
+    "gulp-sourcemaps": "^1.6.0"
   }
 }
