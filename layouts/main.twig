@@ -28,6 +28,7 @@
         <link rel="icon" href="{{_Media.getMediaUrl(networkData.favMedia, 80, 80)}}" sizes="any" type="image/svg+xml" />
     {% endif %}
 
+		{# TODO: need to set fonts dynamically via the admin interface. Commenting out for now.
     {% set primaryFont = networkData['styling']['fonts']['primaryFont'] %}
     {% set secFont = networkData['styling']['fonts']['secondaryFont'] %}
 
@@ -37,9 +38,11 @@
     {% if secFont != "" %}
         <link href='https://fonts.googleapis.com/css?family={{secFont}}:{{networkData['styling']['fonts']['secondaryFontVariants']}}' rel='stylesheet' type='text/css'>
     {% endif %}
+		#}
 
   <!--[if lte IE 8]><script type="text/javascript" src="{{networkData.templatePath}}/ie.js"></script><![endif]-->
 
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> {# TODO: remove manual google fonts include #}
     <link rel="stylesheet" href="{{networkData.templatePath}}/index.css" type="text/css" media="all">
     <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/js/plugins/jquery.fancybox/source/jquery.fancybox.css" />
     <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/js/plugins/jquery.noty-2.3.8/demo/animate.css" />

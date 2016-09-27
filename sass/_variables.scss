@@ -57,9 +57,10 @@ $screen-md: 1180px; // Desktop
 $screen-lg: 1600px; // Large desktop
 
 // Font
-$heading-font-family: "Proxima Nova", Helvetica, Arial, sans-serif !default;
-$base-font-family:  	"Gotham Rounded", Helvetica, Arial, sans-serif !default;
-$text-font-family: 	"Proxima Nova", Helvetica, Arial, sans-serif !default;
+// TODO: need to set the fonts dynamically via the admin interface
+$heading-font-family: "Open Sans", Helvetica, Arial, sans-serif !default;
+$base-font-family:  	"Open Sans", Helvetica, Arial, sans-serif !default;
+$text-font-family: 	"Open Sans", Helvetica, Arial, sans-serif !default;
 $iconfont:				FontAwesome !default;
 
 // Font Size
