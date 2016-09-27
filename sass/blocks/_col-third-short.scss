@@ -107,17 +107,17 @@
             }
         }
 
-        &.card--category, &.card__instagram, &.card__youtube, &.card__vimeo {
-            .card__text, .card__tag {
-                display:none;
-            }
-        }
+        // &.card--category, &.card__instagram, &.card__youtube, &.card__vimeo {
+        //     .card__text, .card__tag {
+        //         display:none;
+        //     }
+        // }
 
-        &.card_social {
-            .card__heading, .card__tag, .card__icon-social {
-                display:none;
-            }
-        }
+        // &.card_social {
+        //     .card__heading, .card__tag, .card__icon-social {
+        //         display:none;
+        //     }
+        // }
 
         &.card__youtube, &.card__vimeo {
             .card__heading {
