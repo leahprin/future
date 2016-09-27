@@ -93,7 +93,7 @@
     {% set hasMediaClass = (social.hasMedia == 'TRUE') ? 'withImage__content' : 'without__image' %}
     <a href="{{ social.url }}" target="_blank" class="card swap card__{{social.source}} card_social  {{hasMediaClass}} {{cardClass}} caption_bottom" data-id="{{article.socialId}}" data-position="{{position}}" data-social="1" data-article-image="{{social.media['path']}}" data-article-text="{{Helper.htmlToText(social.content, -1) | raw | escape('html')}}">
 				{% if position == '1' %}<div class="container">{% endif %}{# contain the hero content to the grid #}
-				{% if social.hasMedia == 'TRUE' and viewType == '1col'%}
+				{% if social.hasMedia == 'TRUE' and viewType != 'small'%}
 						<div class="card__image" style="background-image:url('{{ social.media['path'] }}');"></div>
 				{% endif %}
         <div class="card__content">
@@ -107,7 +107,7 @@
                 <div class="card__date">{{ social.publishDate }}</div>
             </div>
         </div>
-				{% if social.hasMedia == 'TRUE' and viewType != '1col'%}
+				{% if social.hasMedia == 'TRUE' and viewType == 'small'%}
             <div class="card__image" style="background-image:url('{{ social.media['path'] }}');"></div>
         {% endif %}
         {% if article.userHasBlogAccess == '1' %}
