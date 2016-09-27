@@ -1,33 +1,5 @@
 {% if article.articleId > 0 %}
-    {% set articleImg = '' %}
-    {% set displayNameLen = 35 %}
-    {% set cardImageClass = 'without__image' %}
-    {% if article.featuredMedia | length > 0 and article.featuredMedia['id'] is not empty %}
-        {# 1 col article #}
-        {% set imgWidth = 373 %}
-        {% set imgHeight = 180 %}
-        {# article covers 2 cols #}
-        {% if viewType == '2col' %}
-            {% set imgWidth = 385 %}
-            {% set imgHeight = 395 %}
-        {% endif %}
-        {# smallest article view #}
-        {% if viewType == 'small' %}
-            {% set imgWidth = 149 %}
-            {% set imgHeight = 195 %}
-            {% set displayNameLen = 15 %}
-        {% endif %}
-        {% if viewType == 'banner' %}
-            {% set imgWidth = 1310 %}
-            {% set imgHeight = 540 %}
-        {% endif %}
-        {% set cardImageClass = 'withImage__content' %}
-        {% set articleImg = _Media.getMediaUrl(article.featuredMedia,imgWidth, imgHeight, {'crop': 'fill', 'gravity': 'north'} ) %}
-    {% endif %}
-    {% set blogClass = article.blog['title']|replace({' ': ''}) %}
-		{% else %}
-		    {% set social = article.social %}
-		    {% set hasMediaClass = (social.hasMedia == 'TRUE') ? 'withImage__content' : 'without__image' %}
+{% else %}
 <div class="my_card">
   <div class="content">
     <div class="category">Category</div>
