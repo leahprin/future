@@ -3,8 +3,8 @@
         height:400px;
         &__category {
             &:after {
-                //margin-bottom:18px;
-								display: none;
+                margin-bottom:18px;
+								//display: none;
             }
         }
         &__heading {
@@ -28,8 +28,8 @@
             display:block;
         }
         &__text {
-            max-height:42px;
-            overflow-y:hidden;
+            // max-height:42px;
+            // overflow-y:hidden;
             margin-bottom:0px;
         }
         &__featured {
