@@ -7,6 +7,7 @@
 <div class="page_section">
 
 	    {% if articles[0] %}
+					{% set homepageHero = true %}
 	        {{this.render('partials/_single-article.twig', {article: articles[0], 'position': 1, cardClass: 'card__banner full-screen', viewType: 'banner'}) | raw}}
 	    {% endif %}
 
