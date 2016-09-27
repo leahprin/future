@@ -1,15 +1,16 @@
 {% if article.articleId > 0 %}
-		{% else %}
-		    {% set social = article.social %}
-<div class="my_card">
-  <div class="content">
-    <div class="category">Category</div>
-    <div class="text">
-			{# <h2>Headline text</h2> #}
-			<p>{{ social.content | raw | truncate(100, true) }}<p>
-		</div>
-		<div class="media">Image/Video here if available</div>
-    <div class="source">@{{social.source}}</div>
-  </div>
-</div>
+
+{% else %}
+{% set social = article.social %}
+	<div class="my_card">
+	  <div class="content">
+	    <div class="category">{{social.source}}</div>
+	    <div class="text">
+				{# <h2>Headline text</h2> #}
+				<p>{{ social.content | raw | truncate(100, true) }}<p>
+			</div>
+			<div class="media">Image/Video here if available</div>
+	    <div class="source">{{ (social.source == _Article.socialArticleSourceTwitter()) ? '@' : ''}}{{ social.user['name'] | lower }}</div>
+	  </div>
+	</div>
 {% endif %}
