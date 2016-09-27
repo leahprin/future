@@ -28,56 +28,56 @@
         </div>
         {% endif %}
 
-        {% if articles[4] is defined %}
+        {% if articles[5] is defined %}
         <div class="row">
             <div class="col-two-thirds">
-                {% if articles[4] is defined %}
-                    {{this.render('partials/_single-article.twig', {article: articles[4], 'position': 5, viewType: '2col'}) | raw}}
-                {% endif %}
-            </div>
-            <div class="col-third">
                 {% if articles[5] is defined %}
-                    {{this.render('partials/_single-article.twig', {article: articles[5], 'position': 6, viewType: '1col',}) | raw}}
+                    {{this.render('partials/_single-article.twig', {article: articles[5], 'position': 6, viewType: '2col'}) | raw}}
                 {% endif %}
             </div>
-        </div>
-        {% endif %}
-
-        {% if articles[6] is defined %}
-        <div class="row">
-            <div class="col-two-thirds">
+            <div class="col-third">
                 {% if articles[6] is defined %}
-                    {{this.render('partials/_single-article.twig', {article: articles[6], 'position': 7, viewType: '2col'}) | raw}}
-                {% endif %}
-            </div>
-            <div class="col-third">
-                {% if articles[7] is defined %}
-                    {{this.render('partials/_single-article.twig', {article: articles[7], 'position': 8, viewType: '1col'}) | raw}}
+                    {{this.render('partials/_single-article.twig', {article: articles[6], 'position': 7, viewType: '1col',}) | raw}}
                 {% endif %}
             </div>
         </div>
         {% endif %}
 
-        {% if articles[8] is defined %}
+        {% if articles[7] is defined %}
         <div class="row">
             <div class="col-two-thirds">
-                {% if articles[8] is defined %}
-                    {{this.render('partials/_single-article.twig', {article: articles[8], 'position': 9, viewType: '2col'}) | raw}}
+                {% if articles[7] is defined %}
+                    {{this.render('partials/_single-article.twig', {article: articles[7], 'position': 8, viewType: '2col'}) | raw}}
                 {% endif %}
             </div>
             <div class="col-third">
-                {% if articles[9] is defined %}
-                    {{this.render('partials/_single-article.twig', {article: articles[9], 'position': 10, viewType: '1col'}) | raw}}
+                {% if articles[8] is defined %}
+                    {{this.render('partials/_single-article.twig', {article: articles[8], 'position': 9, viewType: '1col'}) | raw}}
                 {% endif %}
             </div>
         </div>
         {% endif %}
 
-        {% if articles[10] is defined %}
+        {% if articles[9] is defined %}
+        <div class="row">
+            <div class="col-two-thirds">
+                {% if articles[9] is defined %}
+                    {{this.render('partials/_single-article.twig', {article: articles[9], 'position': 10, viewType: '2col'}) | raw}}
+                {% endif %}
+            </div>
+            <div class="col-third">
+                {% if articles[10] is defined %}
+                    {{this.render('partials/_single-article.twig', {article: articles[10], 'position': 11, viewType: '1col'}) | raw}}
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+
+        {% if articles[11] is defined %}
         <div class="row">
             <div class="col-full">
-                {% if articles[10] is defined %}
-                    {{this.render('partials/_single-article.twig', {article: articles[10], 'position': 11, cardClass: 'card__banner', viewType: 'banner'}) | raw}}
+                {% if articles[11] is defined %}
+                    {{this.render('partials/_single-article.twig', {article: articles[11], 'position': 12, cardClass: 'card__banner', viewType: 'banner'}) | raw}}
                 {% endif %}
             </div>
         </div>
@@ -89,9 +89,9 @@
             </div>
         </div>
 
-        {% if articles[11] is defined %}
+        {% if articles[12] is defined %}
         <div class="row">
-            {% for i in 11..19 %}
+            {% for i in 12..20 %}
                 {% if articles[i] is defined %}
                    <div class="col-third">
                         {{this.render('partials/_single-article.twig', {article: articles[i], 'position': (i+1), viewType: '2col'}) | raw}}
