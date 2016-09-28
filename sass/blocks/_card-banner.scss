@@ -29,6 +29,9 @@
             vertical-align:middle;
             z-index:100;
             padding-bottom: 50px;
+            align-items: inherit;
+            flex-direction: inherit;
+            align-self: inherit;
             @media (min-width: 768px) {
                 padding-bottom: 0;
                 padding-top: 40px;

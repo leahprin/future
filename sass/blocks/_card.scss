@@ -52,13 +52,16 @@
         z-index:100;
     }
     &__content {
-        display:table-cell;
+        display:flex;
         padding:20px;
         position:relative;
         z-index:100;
         text-align: left;
         color: white;
         vertical-align:middle;
+        align-items: flex-start;
+        flex-direction: column;
+        align-self: flex-end;
         @include phone {
             display:block;
             padding-bottom: 40px!important;

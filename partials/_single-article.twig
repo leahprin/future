@@ -101,6 +101,7 @@
             {#| viewType: [{{viewType}}] | position: [{{position}}] cardClass: [{{cardClass}}]#}
             <div class="card__category">{{social.source | capitalize}}</div>
             <p class="card__text" id="updateSocial{{article.socialId}}" data-update="0">{{ social.content | raw | truncate(200, true) }}<!--<span class="card__tag">#tempor</span> --></p>
+            <div class="card__read-more">Read Story</div>
             <div class="card__caption">
                 {# {% if social.user['media']['path'] is not empty %}
                     <div class="card__avatar" style="background-image:url('{{social.user['media']['path']}}');"></div>
