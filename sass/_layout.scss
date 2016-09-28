@@ -178,4 +178,7 @@
     @media (min-width: 768px) and (max-width: 1180px) {
         @include padding(120px 0 0 0);
     }
+    .container > .row {
+        display: flex;
+    }
 }
