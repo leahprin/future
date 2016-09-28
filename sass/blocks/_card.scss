@@ -68,23 +68,22 @@
     }
     &__category {
         font-size: 13px;
-        color: #52A097;
         letter-spacing: 0.21px;
         font-weight: 600;
         line-height:16px;
         padding: 3px 11px 4px;
-        border-radius: 39px;
-        background-color: $highlight-color;
         display: inline-block;
         margin-bottom: 25px;
         position: relative;
         &::after {
             content: "";
             display: inline-block;
-            background-color: $highlight-color;
             position: absolute;
             width: 20px;
-            height: 20px;
+            height: 4px;
+            border-radius: 100px;
+            left: 10px;
+            bottom: -8px;
         }
         @include phone {
             &:after {
