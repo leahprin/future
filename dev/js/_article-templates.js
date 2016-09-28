@@ -27,6 +27,7 @@ var systemCardTemplate = '<div itemscope itemtype="http://schema.org/NewsArticle
 			'<div class="card__category">{{blog.title}}</div>'+
 			'<h1 itemprop="headline" class="card__heading">{{{title}}}</h1>'+
 			'<p itemprop="description" class="card__text">{{{excerpt}}}</p>'+
+			'<div class="card__read-more">Read Story</div>'+
 			'<div class="card__caption">'+
 				'<div class="card__icon-social card__social-share">'+
 					'<div class="tooltip">'+
@@ -67,6 +68,7 @@ var socialCardTemplate =
         '<div class="card__content">'+
             '<div class="card__category">{{social.source}}</div>'+
             '<p class="card__text" id="updateSocial{{socialId}}" data-update="0">{{{social.content}}}</p>'+
+						'<div class="card__read-more">Read Story</div>'+
             '<div class="card__caption">'+
             '{{#if social.user.media.path }}'+
                 '<div class="card__avatar" style="background-image:url({{social.user.media.path}})"></div>'+

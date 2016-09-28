@@ -365,9 +365,11 @@
         background:$light-color;
         @include phone {
             height: 28px;
+            border-bottom: 4px solid $highlight-color;
         }
         @include tablet {
             height: 28px;
+            border-bottom: 4px solid $highlight-color;
         }
         &-list {
             list-style:none;
