@@ -1,15 +1,9 @@
 .header {
     background: #363636;
-    border-bottom-style:solid;
-    border-bottom-width:6px;
     box-shadow:0px 0px 20px rgba(0, 0, 0, 0.1);
     position:fixed;
     top:0px;
-    width:100%;
     z-index:1000;
-    @include phone {
-        border-bottom-width:0px;
-    }
     &__heading {
         &-link {
             &, &:link, &:visited, &:active {
@@ -58,9 +52,9 @@
                     }
 
                     @include phone-to-tablet {
-                        width:30px;
-                        height:30px;
-                        top:30px;
+                        width: 35px;
+                        height: 35px;
+                        top: 28px;
                         right:15px;
                     }
                 }
@@ -100,8 +94,12 @@
         padding-top:26px;
         padding-bottom:26px;
         width:100%;
+        position: relative;
         @include phone {
             border-bottom:2px $highlight-color solid;
+        }
+        @media (min-width: 1180px) {
+            width: auto;
         }
 
         .col-right {
@@ -133,6 +131,9 @@
             right:50px;
             position:relative;
             border-bottom:1px solid $light-color;
+            @media (min-width: 1180px) {
+                right: 75px;
+            }
 
             @media #{$media-phone}, #{$media-iPhoneLarge}, #{$media-iPhoneMedium} {
                 right:100px;
