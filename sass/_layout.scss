@@ -173,9 +173,9 @@
     @include padding(167px 0 0 0);
 
     @media screen and (max-width:767px) {
-        @include padding(121px 0 0 0);
+        @include padding(120px 0 0 0);
     }
     @media (min-width: 768px) and (max-width: 1180px) {
-        @include padding(121px 0 0 0);
+        @include padding(120px 0 0 0);
     }
 }

@@ -3,11 +3,11 @@
     background-position:50%;
     background-repeat:no-repeat;
     background-size:cover;
-    display:table;
     height:600px;
-    margin-bottom:40px;
+    margin-bottom:30px;
     padding:0px;
     width:100%;
+    text-align: left;
 
     @media #{$media-phone}, #{$media-iPhoneMedium} {
         height:auto;
@@ -48,6 +48,9 @@
             color:$light-color;
             font-weight:100;
             margin-bottom:20px;
+            @include phone {
+                display: none;
+            }
         }
         &__caption {
             margin-bottom:40px;
