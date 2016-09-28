@@ -94,13 +94,10 @@
         margin:0 auto;
         padding-top:26px;
         padding-bottom:26px;
-        width:1180px;
         position: relative;
-        @include phone {
-            border-bottom:2px $highlight-color solid;
-        }
+        width: 100%;
         @media (min-width: 1180px) {
-            width: auto;
+            width:1180px;
         }
 
         .col-right {
@@ -362,10 +359,12 @@
     &__navigation {
         background:$light-color;
         @include phone {
-            display:none!important;
+            height: 28px;
+            border-bottom:4px $highlight-color solid;
         }
         @include tablet {
-            display:none!important;
+            height: 28px;
+            border-bottom:4px $highlight-color solid;
         }
         &-list {
             list-style:none;
