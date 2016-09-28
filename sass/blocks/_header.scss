@@ -41,22 +41,26 @@
                     background-image:url(images/icons/profile.svg);
                     background-repeat:no-repeat;
                     background-position:50% 50%;
-                    background-size:40px;
+                    background-size:35px;
                     position:absolute;
                     right:20px;
-                    top:10px;
-                    height:40px;
-                    width:40px;
+                    top:15px;
+                    height:35px;
+                    width:35px;
                     z-index:100;
                     @include border-radius(100%);
 
                     @include phone {
-                        top:10px;
+                        top:20px;
                         right:10px;
+                        width:30px;
+                        height:30px;
                     }
 
                     @include phone-to-tablet {
-                        width:40px;
+                        width:30px;
+                        height:30px;
+                        top: 20px;
                         right:15px;
                     }
                 }
@@ -70,7 +74,7 @@
                 background-size:40px;
                 position:absolute;
                 top:0px;
-                left:0px;
+                left:5px;
                 line-height:120px;
                 height:120px;
                 width:120px;
