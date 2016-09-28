@@ -1,10 +1,10 @@
 .col-third-short {
-
+    
     .card {
-        height: 156px;
+        height:200px;
         margin-bottom:0px;
         overflow:hidden;
-
+        
         &__no-image,
         &__image {
             border-width:0px;
@@ -18,7 +18,7 @@
         }
         &__category {
             &:after {
-							display: none;
+                margin-bottom:20px;
             }
         }
         &__heading {
@@ -58,35 +58,34 @@
             margin-bottom:20px;
         }
         @include phone {
-            height:auto;
             margin-bottom:20px;
         }
         @include tablet {
             margin-bottom:20px;
         }
     }
-
-
+    
+    
     .card {
-
+        
         &.card--light {
             .card__image {
                 width:100%;
             }
-
+            
             .card__content {
                 height:194px;
                 overflow:hidden;
-
+                
                 .content-section {
                     height:154px;
                     position:relative;
-
+                    
                     .card__text {
                         height:50px;
                         overflow:hidden;
                     }
-
+            
                     .card__caption {
                         width:100%;
                         bottom:0px!important;
@@ -96,28 +95,28 @@
                 }
             }
         }
-
+        
         .card__icon-social {
             top:5px;
         }
-
+        
         &.card--technology {
             .card__tag, .card__read-time {
                 display:none;
             }
         }
+        
+        &.card--category, &.card__instagram, &.card__youtube, &.card__vimeo {
+            .card__text, .card__tag {
+                display:none;
+            }
+        }
 
-        // &.card--category, &.card__instagram, &.card__youtube, &.card__vimeo {
-        //     .card__text, .card__tag {
-        //         display:none;
-        //     }
-        // }
-
-        // &.card_social {
-        //     .card__heading, .card__tag, .card__icon-social {
-        //         display:none;
-        //     }
-        // }
+        &.card_social {
+            .card__heading, .card__tag, .card__icon-social {
+                display:none;
+            }
+        }
 
         &.card__youtube, &.card__vimeo {
             .card__heading {
@@ -134,29 +133,29 @@
                 display:block;
             }
         }
-
-
+        
+        
         &.withImage__content {
-
+            
             .card__content {
-                //height:194px;
+                height:194px;
                 overflow:hidden;
-
+                
                 .content-section {
                     height:154px;
                     position:relative;
-
+                    
                     .card__text {
                         height:50px;
                         overflow:hidden;
                     }
-
+            
                     .card__caption {
                         width:100%;
                         bottom:0px!important;
                         margin-bottom:0px;
                         position:absolute;
-
+                        
                         .card__read-time {
                             display:none;
                         }
@@ -164,21 +163,21 @@
                 }
             }
         }
-
-
+        
+        
         &.without__image {
             .card__image {
                 display:none;
             }
-
+            
             .card__content {
                 height:194px;
                 overflow:hidden;
-
+                
                 .content-section {
                     height:154px;
                     position:relative;
-
+            
                     .card__caption {
                         width:100%;
                         bottom:0px!important;
@@ -187,13 +186,13 @@
                     }
                 }
             }
-
+            
             .content-section {
                 .card__heading, .card__text, .card__date, .card__read-time {
                     color:$dark-color;
                     text-shadow:none;
                 }
-
+                
                 .card__text {
                     height:50px;
                     overflow:hidden;

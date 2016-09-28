@@ -17,13 +17,15 @@
         &__content {
             display:table-cell;
             position:relative;
+            text-align:center;
             vertical-align:middle;
             z-index:100;
-						max-width: 700px;
-
+            @include padding(0 10% 40px);
         }
         &__category{
-					padding: 0;
+            &:after {
+                margin:5px auto 30px auto;
+            }
         }
         &__icon {
             &-social {
@@ -43,14 +45,14 @@
             }
         }
         &__text {
-            @include card_text;
+            @include card_text_large;
             color:$light-color;
-            //font-weight:100;
+            font-weight:100;
             margin-bottom:20px;
         }
-        // &__caption {
-        //     margin-bottom:40px;
-        // }
+        &__caption {
+            margin-bottom:40px;
+        }
         &__avatar {
             margin:0px auto 14px;
             float:none;

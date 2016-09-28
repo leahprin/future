@@ -2,11 +2,11 @@
 @mixin card_heading1 {
     color:$light-color;
     font-family:$heading-font-family;
-    font-size:44px;
+    font-size:54px;
     font-weight:bold;
-    line-height:54px;
+    line-height:60px;
     margin:0px 0px 50px 0px;
-
+    
     @include phone-to-tablet {
         line-height:1.2;
         font-size:($baseFontSize * 3);
@@ -21,13 +21,13 @@
 @mixin card_heading3 {
     font-size:30px;
     line-height:36px;
-    margin-bottom:22px;
+    margin-bottom:25px;
 }
 
 @mixin card_heading4 {
     font-size:18px;
     line-height:24px;
-    margin-bottom:22px;
+    margin-bottom:25px;
 }
 
 // Text
@@ -37,8 +37,8 @@
 }
 
 @mixin card_text {
-    font-size:18px;
-    line-height:26px;
+    font-size:16px;
+    line-height:22px;
 }
 
 @mixin card_text_small {
