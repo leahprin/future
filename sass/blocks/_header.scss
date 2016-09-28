@@ -36,12 +36,12 @@
                     background-image:url(images/icons/profile.svg);
                     background-repeat:no-repeat;
                     background-position:50% 50%;
-                    background-size:35px;
+                    background-size:40px;
                     position:absolute;
                     right:20px;
-                    top:30px;
-                    height:35px;
-                    width:35px;
+                    top: 34px;
+                    height: 40px;
+                    width: 40px;
                     z-index:100;
                     @include border-radius(100%);
 
@@ -98,6 +98,8 @@
         width: 100%;
         @media (min-width: 1180px) {
             width:1180px;
+            padding-top:30px;
+            padding-bottom:30px;
         }
 
         .col-right {
@@ -206,6 +208,9 @@
         @media (min-width: 768px) and (max-width: 1180px) {
             margin-left:75px;
             @include transition(all 0.2s linear);
+        }
+        @media (min-width: 1180px) {
+            height: 64px;
         }
     }
     &__button {
@@ -630,5 +635,11 @@
         &:after {
             @include transform(rotate(-45deg));
         }
+    }
+}
+
+.header-container .col-left {
+    @media (min-width: 1180px) {
+        height: 64px;
     }
 }
