@@ -51,7 +51,7 @@
                     @include border-radius(100%);
 
                     @include phone {
-                        top:17px;
+                        top:30px;
                         right:10px;
                         width:30px;
                         height:30px;
@@ -60,7 +60,7 @@
                     @include phone-to-tablet {
                         width:30px;
                         height:30px;
-                        top: 17px;
+                        top:30px;
                         right:15px;
                     }
                 }
