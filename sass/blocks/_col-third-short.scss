@@ -1,7 +1,7 @@
 .col-third-short {
     
     .card {
-        height:200px;
+        height:157px;
         margin-bottom:0px;
         overflow:hidden;
         
@@ -57,12 +57,7 @@
         &:last-child {
             margin-bottom:20px;
         }
-        @include phone {
-            margin-bottom:20px;
-        }
-        @include tablet {
-            margin-bottom:20px;
-        }
+
     }
     
     
