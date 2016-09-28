@@ -22,7 +22,7 @@
 
         <div class="footer__desktop">
             <div class="footer__left">
-                <a href="{{network.defaultBlogUrl}}" class="footer__logo"><img src="https://unsplash.it/225/50"/></a>
+                <a href="{{networkData.defaultBlogUrl}}" class="footer__logo"><img src="{{_Media.getMediaUrl(networkData.logoMedia, 118, 78, {'crop': 'fit'})}}" /></a>
                 <div class="footer__navigation">
                     <div class="header__navigation-row">
                         {% set menuItems = blogData.blogMenu %}
@@ -47,10 +47,15 @@
             <div class="footer__right">
                 <div class="footer__additional-links">
                     <div class="footer__social-links">
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        {% if blogInfo.social['twitter'] is not empty %}
+                            <a href="http://www.twitter.com/{{blogInfo.social['twitter']}}" class="fa_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        {% endif %}
+                        {% if blogInfo.social['facebook'] is not empty %}
+                            <a href="http://{{blogInfo.social['facebook']}}" class="fa_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        {% endif %}
+                        {% if blogInfo.social['google'] is not empty %}
+                            <a href="{{blogInfo.social['google']}}" class="fa_gplus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        {% endif %}
                     </div>
                     <a class="footer__additional-links" href="#">Contact Us</a>
                     <a class="footer__additional-links" href="#">Privacy Policy</a>
