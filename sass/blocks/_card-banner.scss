@@ -9,8 +9,13 @@
     width:100%;
     text-align: left;
 
-    @media #{$media-phone}, #{$media-iPhoneMedium} {
-        min-height:400px;
+    @media (max-width: 767px) {
+        height:470px;
+    }
+
+    .container {
+        display: flex;
+        align-items: flex-end;
     }
 
     .card {
@@ -48,7 +53,7 @@
             color:$light-color;
             font-weight:100;
             margin-bottom:20px;
-            @include phone {
+            @media (max-width: 767px) {
                 display: none;
             }
         }
