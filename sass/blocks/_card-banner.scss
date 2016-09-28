@@ -10,14 +10,14 @@
     text-align: left;
 
     @media #{$media-phone}, #{$media-iPhoneMedium} {
-        height:auto;
+        min-height:400px;
     }
 
     .card {
         &__content {
             display:table-cell;
             position:relative;
-            text-align:center;
+            text-align:left;
             vertical-align:middle;
             z-index:100;
         }
