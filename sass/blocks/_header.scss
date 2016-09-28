@@ -1,5 +1,5 @@
 .header {
-    background-color:#27292c;
+    background: #363636;
     border-bottom-style:solid;
     border-bottom-width:6px;
     box-shadow:0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -44,14 +44,14 @@
                     background-size:35px;
                     position:absolute;
                     right:20px;
-                    top:15px;
+                    top:30px;
                     height:35px;
                     width:35px;
                     z-index:100;
                     @include border-radius(100%);
 
                     @include phone {
-                        top:20px;
+                        top:17px;
                         right:10px;
                         width:30px;
                         height:30px;
@@ -60,7 +60,7 @@
                     @include phone-to-tablet {
                         width:30px;
                         height:30px;
-                        top: 20px;
+                        top: 17px;
                         right:15px;
                     }
                 }
@@ -97,8 +97,8 @@
     &__container {
         @extend .container;
         margin:0 auto;
-        padding-top:10px;
-        padding-bottom:10px;
+        padding-top:26px;
+        padding-bottom:26px;
         width:100%;
         @include phone {
             border-bottom:2px $highlight-color solid;
@@ -172,7 +172,8 @@
                 background-color:transparent;
 
                 @media #{$media-phone}, #{$media-iPhoneLarge}, #{$media-iPhoneMedium} {
-                    top:11px;
+                    top: 23px;
+                    left:8px;
                 }
                 .icon-search {
                     font-size: ($baseFontSize * 1) + 2;
@@ -389,8 +390,8 @@
             }
         }
         &-responsive {
-            top:0px;
-            left:0px;
+            top: 14px;
+            left:5px;
             position:absolute;
             background-image:url("");
             background-position:50% 50%;
