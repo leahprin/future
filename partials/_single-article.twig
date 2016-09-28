@@ -98,8 +98,9 @@
 						<div class="card__image" style="background-image:url('{{ social.media['path'] }}');"></div>
 				{% endif %}
         <div class="card__content">
-            <div class="card__category">{{social.source | capitalize}} | viewType: [{{viewType}}] | position: [{{position}}] cardClass: [{{cardClass}}]</div>
-            <p class="card__text" id="updateSocial{{article.socialId}}" data-update="0">{{ social.content | raw | truncate(100, true) }}<!--<span class="card__tag">#tempor</span> --></p>
+            {#| viewType: [{{viewType}}] | position: [{{position}}] cardClass: [{{cardClass}}]#}
+            <div class="card__category">{{social.source | capitalize}}</div>
+            <p class="card__text" id="updateSocial{{article.socialId}}" data-update="0">{{ social.content | raw | truncate(200, true) }}<!--<span class="card__tag">#tempor</span> --></p>
             <div class="card__caption">
                 {# {% if social.user['media']['path'] is not empty %}
                     <div class="card__avatar" style="background-image:url('{{social.user['media']['path']}}');"></div>
