@@ -18,10 +18,9 @@
         }
     }
     &__read-more {
-        opacity: 0.69;
         font-weight: 600;
         font-size: 13px;
-        color: #FFFFFF;
+        color: #4A4A4A;
         letter-spacing: 0px;
     }
     &__image {
@@ -68,17 +67,25 @@
         }
     }
     &__category {
-        font-weight: 600;
         font-size: 13px;
-        color: #FFFFFF!important;
+        color: #52A097;
         letter-spacing: 0.21px;
-        font-family:$base-font-family;
+        font-weight: 600;
         line-height:16px;
         padding: 3px 11px 4px;
         border-radius: 39px;
         background-color: $highlight-color;
         display: inline-block;
         margin-bottom: 25px;
+        position: relative;
+        &::after {
+            content: "";
+            display: inline-block;
+            background-color: $highlight-color;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+        }
         @include phone {
             &:after {
                 margin-bottom:18px;
@@ -101,6 +108,10 @@
     &__text {
         @include card_text;
         margin-bottom:22px;
+        font-size: 18px;
+        color: #4A4A4A;
+        letter-spacing: -0.25px;
+        line-height: 26px;
         @include phone {
             margin-bottom:0px;
         }
