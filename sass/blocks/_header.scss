@@ -180,6 +180,9 @@
                 .icon-search {
                     font-size: ($baseFontSize * 1) + 2;
                 }
+                @media (min-width: 1180px) {
+                    text-align: left;
+                }
             }
         }
     }
