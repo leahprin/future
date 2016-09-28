@@ -16,6 +16,9 @@
     .container {
         display: flex;
         align-items: flex-end;
+        @media (min-width: 768px) {
+            align-items: center;
+        }
     }
 
     .card {
@@ -25,6 +28,11 @@
             text-align:left;
             vertical-align:middle;
             z-index:100;
+            padding-bottom: 50px;
+            @media (min-width: 768px) {
+                padding-bottom: 0;
+                padding-top: 40px;
+            }
         }
         &__category{
             &:after {
@@ -43,6 +51,8 @@
             @include card_heading1;
             margin-bottom:30px;
             width:100%;
+            max-width: 650px;
+            margin-right: auto;
 
             @include phone {
                 @include card_heading3;
@@ -53,6 +63,8 @@
             color:$light-color;
             font-weight:100;
             margin-bottom:20px;
+            max-width: 680px;
+            margin-right: auto;
             @media (max-width: 767px) {
                 display: none;
             }
