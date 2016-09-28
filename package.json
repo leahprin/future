@@ -27,5 +27,5 @@
     "map-stream": "^0.1.0",
     "tiny-lr": "0.0.5",
 		"gulp-sourcemaps": "^1.6.0"
-  },
+  }
 }

@@ -38,6 +38,11 @@
 	}
 }
 
+@mixin bigger-then-tablet {
+	@media(min-width: 992px) {
+		@content;
+	}
+}
 
 // Default mixins for application
 
