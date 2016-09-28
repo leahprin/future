@@ -4,6 +4,7 @@
     position:fixed;
     top:0px;
     z-index:1000;
+    width:100%;
     &__heading {
         &-link {
             &, &:link, &:visited, &:active {
@@ -93,7 +94,7 @@
         margin:0 auto;
         padding-top:26px;
         padding-bottom:26px;
-        width:100%;
+        width:1180px;
         position: relative;
         @include phone {
             border-bottom:2px $highlight-color solid;
