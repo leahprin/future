@@ -5,6 +5,7 @@
     height: 470px;
     position:relative;
     display: flex;
+    border-top: 4px solid;
     @include phone {
         margin-top:66px;
     }
@@ -52,7 +53,7 @@
     }
     &__content {
         display:flex;
-        padding:20px;
+        padding:20px 30px 40px;
         position:relative;
         z-index:100;
         text-align: left;
@@ -71,9 +72,8 @@
         letter-spacing: 0.21px;
         font-weight: 600;
         line-height:16px;
-        padding: 3px 11px 4px;
         display: inline-block;
-        margin-bottom: 25px;
+        margin-bottom: 35px;
         position: relative;
         &::after {
             content: "";
@@ -84,11 +84,6 @@
             border-radius: 100px;
             left: 10px;
             bottom: -8px;
-        }
-        @include phone {
-            &:after {
-                margin-bottom:18px;
-            }
         }
     }
     &__heading-large {

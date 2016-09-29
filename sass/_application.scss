@@ -9,7 +9,7 @@
   }
 
   .card--#{$name} {
-    border-color: $color;
+    border-color: $color!important;
 
     .card {
       &__category {
